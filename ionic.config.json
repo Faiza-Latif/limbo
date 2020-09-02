@@ -1,0 +1,7 @@
+{
+  "name": "limbo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
