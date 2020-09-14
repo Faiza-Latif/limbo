@@ -1,11 +1,11 @@
 <ion-content>
     <div class="container">
-        <div class="row">
-            <div class="col">
-            <app-title>Limbo</app-title>
+        <div class="row align-items-center">
+            <div class="col-6 offset-3 my-5 pt-1">
+                <ion-img src="../../assets/icon/limbo.svg"></ion-img>
             </div>
         </div>
-        <div class="row pt-2">
+        <div class="row">
             <div class="col mx-3 my-1">
                 <ion-input class="mx-auto" placeholder="Email"></ion-input>
             </div>
@@ -18,12 +18,42 @@
 
         <div class="row pt-2">
             <div class="col mx-3 mt-1">
-                <ion-button class="mx-auto principal" color="primary"> Login </ion-button>
+                <ion-button class="mx-auto principal" color="primary" [disabled]="!filled"> Login </ion-button>
             </div>
         </div>
         <div class="row pt-2">
-            <div class="col mx-3 my-n1">
+            <div class="col mx-3 my-n2">
                 <ion-button class="mx-auto secondary" fill="clear"> Forgot your password? </ion-button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <div class="text-center"> Don't have an account yet? <span class="sign-up">Sign up</span></div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-2">
+            <div class="col-4 p-0 my-auto line  ion-align-items-end">
+            </div>
+            <div class="col-1 p-0 text-center">
+                Or
+            </div>
+            <div class="col-4 p-0  my-auto  ion-align-items-start line">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <div class="text-center">Continue by linking a social media account</div>
+            </div>
+        </div>
+        <div class="row pb-1 mt-4 justify-content-center">
+            <div class="col-2">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <div class="col-2">
+                <ion-icon name="logo-google"></ion-icon>
+            </div>
+            <div class="col-2 ">
+                <ion-icon name="logo-github"></ion-icon>
             </div>
         </div>
     </div>

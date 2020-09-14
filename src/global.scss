@@ -28,27 +28,31 @@
 ion-input {
   --background: var(--ion-color-medium-contrast) !important;
   --color: var(--ion-color-primary) !important;
-  border: 2px solid var(--ion-color-primary) !important;
   width: 100% !important;
-  min-width: 150px;
-  min-height: 55px;
-  border-radius: 25px;
+  min-width: 100px;
+  min-height: 50px;
+  border-radius: 20px;
 }
 
-ion-button {
+ion-button.principal {
   text-transform: none;
-  width: 100% !important;
-  min-width: 150px;
+  min-width: 90px;
   min-height: 55px;
-  &.principal {
-    font-weight: 800;
-    --border-radius: 25px !important;
-    font-size: 20px;
-  }
-  &.secondary {
-    font-weight: 700;
-    font-size: 16px;
-  }
+
+  width: 100% !important;
+  font-weight: 800;
+  --border-radius: 20px !important;
+  font-size: 18px;
+}
+
+ion-button.secondary {
+  text-transform: none;
+  min-width: 100px;
+  min-height: 55px;
+  width: 100% !important;
+  font-weight: 700;
+  font-size: 16px;
+  --border-radius: 20px !important;
 
 }
 
@@ -58,10 +62,9 @@ ion-content {
   font-weight: normal;
 }
 
-ion-header{
+ion-header {
   --ion-toolbar-background: white;
 }
-
 
 
 /* montserrat-regular - latin */
@@ -77,6 +80,7 @@ ion-header{
   url('assets/fonts/montserrat-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
   url('assets/fonts/montserrat-v14-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
+
 /* montserrat-italic - latin */
 @font-face {
   font-family: 'Montserrat';
@@ -90,6 +94,7 @@ ion-header{
   url('assets/fonts/montserrat-v14-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
   url('assets/fonts/montserrat-v14-latin-italic.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
+
 /* montserrat-600 - latin */
 @font-face {
   font-family: 'Montserrat';
@@ -103,6 +108,7 @@ ion-header{
   url('assets/fonts/montserrat-v14-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
   url('assets/fonts/montserrat-v14-latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
+
 /* montserrat-700 - latin */
 @font-face {
   font-family: 'Montserrat';

@@ -2,6 +2,23 @@
 :host  ::ng-deep input {
         padding-left: 20px !important;
 }
+.line {
+        display: inline;
+        border-bottom: 1px solid black;
+}
 
+ion-img {
+        max-width: 300px;
+        max-height: 500px;
+}
 
+.sign-up {
 
+        text-transform: none;
+        color:var(--ion-color-primary);
+        font-weight: bold;
+}
+ion-icon {
+        color: var(--ion-color-primary);
+        font-size: 2.5em;
+}
