@@ -1,0 +1,56 @@
+<ion-content>
+  <ion-content>
+    <div class="container pb-3git ">
+      <div class="row align-items-center">
+        <div class="col-6 offset-3 my-5 pt-1">
+          <ion-img src="../../assets/icon/limbo.svg"></ion-img>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mx-3 my-1">
+          <ion-input class="mx-auto" placeholder="Email"></ion-input>
+        </div>
+      </div>
+      <div class="row pt-2">
+        <div class="col mx-3 my-1">
+          <ion-input class="mx-auto" placeholder="Password"></ion-input>
+        </div>
+      </div>
+
+      <div class="row pt-2">
+        <div class="col mx-3 mt-1">
+          <ion-button class="mx-auto principal" color="primary" [disabled]="!filled"> Register </ion-button>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-2">
+        <div class="col-4 p-0 my-auto line  ion-align-items-end">
+        </div>
+        <div class="col-1 p-0 text-center">
+          Or
+        </div>
+        <div class="col-4 p-0  my-auto  ion-align-items-start line">
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <div class="text-center">Continue by linking a social media account</div>
+        </div>
+      </div>
+      <div class="row mt-5 justify-content-center">
+        <div class="col-2">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </div>
+        <div class="col-2">
+          <ion-icon name="logo-google"></ion-icon>
+        </div>
+        <div class="col-2 ">
+          <ion-icon name="logo-github"></ion-icon>
+        </div>
+      </div>
+      <div class="row mt-5  text-center">
+        <div class="col">  Already have an account? <span class="sign-up" [routerLink]="['/'+'login']">Sign in</span></div>
+    </div>
+    </div>
+
+</ion-content>

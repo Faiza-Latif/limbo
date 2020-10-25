@@ -66,6 +66,10 @@ ion-header {
   --ion-toolbar-background: white;
 }
 
+.line {
+  display: inline;
+  border-bottom: 1px solid black;
+}
 
 /* montserrat-regular - latin */
 @font-face {

@@ -1,5 +1,5 @@
-<ion-content>
-    <div class="container">
+<ion-content >
+    <div class="container pb-3">
         <div class="row align-items-center">
             <div class="col-6 offset-3 my-5 pt-1">
                 <ion-img src="../../assets/icon/limbo.svg"></ion-img>
@@ -28,7 +28,7 @@
         </div>
         <div class="row mt-4">
             <div class="col">
-                <div class="text-center"> Don't have an account yet? <span class="sign-up">Sign up</span></div>
+                <div class="text-center"> Don't have an account yet? <span class="sign-up" [routerLink]="['/'+'signup']">Sign up</span></div>
             </div>
         </div>
         <div class="row justify-content-center mt-2">
@@ -45,7 +45,7 @@
                 <div class="text-center">Continue by linking a social media account</div>
             </div>
         </div>
-        <div class="row pb-1 mt-4 justify-content-center">
+        <div class="row mt-5 justify-content-center">
             <div class="col-2">
                 <ion-icon name="logo-facebook"></ion-icon>
             </div>

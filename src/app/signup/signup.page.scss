@@ -1,0 +1,19 @@
+ion-icon {
+  color: var(--ion-color-primary);
+  font-size: 3em;
+}
+
+ion-img {
+  max-width: 300px;
+  max-height: 500px;
+}
+
+:host  ::ng-deep input {
+  padding-left: 20px !important;
+}
+
+.sign-up {
+  text-transform: none;
+  color:var(--ion-color-primary);
+  font-weight: bold;
+}
