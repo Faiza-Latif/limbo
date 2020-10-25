@@ -1,4 +1,5 @@
 <ion-content >
+    <div  [formGroup]="loginForm">
     <div class="container pb-3">
         <div class="row align-items-center">
             <div class="col-6 offset-3 my-5 pt-1">
@@ -7,18 +8,18 @@
         </div>
         <div class="row">
             <div class="col mx-3 my-1">
-                <ion-input class="mx-auto" placeholder="Email"></ion-input>
+                <ion-input class="mx-auto" formControlName="email" placeholder="Email"></ion-input>
             </div>
         </div>
         <div class="row pt-2">
             <div class="col mx-3 my-1">
-                <ion-input class="mx-auto" placeholder="Password"></ion-input>
+                <ion-input class="mx-auto" formControlName="password" type="password" placeholder="Password"></ion-input>
             </div>
         </div>
 
         <div class="row pt-2">
             <div class="col mx-3 mt-1">
-                <ion-button class="mx-auto principal" color="primary" [disabled]="!filled"> Login </ion-button>
+                <ion-button class="mx-auto principal" color="primary" [disabled]="!filled" (click)="login()"> Login </ion-button>
             </div>
         </div>
         <div class="row pt-2">
@@ -56,5 +57,6 @@
                 <ion-icon name="logo-github"></ion-icon>
             </div>
         </div>
+    </div>
     </div>
 </ion-content>
